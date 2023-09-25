@@ -6,6 +6,9 @@
         <form [formGroup]="form" class="auth-from" (ngSubmit)="submit()" (keypress.enter)="submit()">
 
             <app-logo></app-logo>
+
+            <!--email -->
+            
             <app-custom-input 
             autocomplete="email" 
             icon="mail-outline"
@@ -18,6 +21,9 @@
                 <div *ngIf="form.controls.email.errors?.['required']">El correo es requerido</div>
                 <div *ngIf="form.controls.email.errors?.['email']">Ingrese un correo válido</div>
             </div>
+
+
+            <!--Password -->
 
             <app-custom-input 
             [control]="form.controls.password"
@@ -38,7 +44,7 @@
             </ion-button>
 
             <ion-button class="ion-margin-top" routerLink="registrar" expand="block" mode="ios" fill="outline">
-                Regístro
+                Regístrarse
                 <ion-icon slot="end" name="person-add-outline"></ion-icon>
             </ion-button>
     
