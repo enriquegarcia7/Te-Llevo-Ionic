@@ -7,15 +7,15 @@ import {
   updateProfile
 } from 'firebase/auth';
 import { User } from '../models/user.model';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
-import { getFirestore, setDoc, doc } from '@angular/fire/firestore';
+//import { AngularFirestore } from '@angular/fire/compat/firestore';
+//import { getFirestore, setDoc, doc } from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root',
 })
 export class FirebaseService {
   auth = inject(AngularFireAuth);
-  firestore = inject(AngularFirestore);
+ // firestore = inject(AngularFirestore);
 
   //---autenticacion-----
 
@@ -36,7 +36,7 @@ export class FirebaseService {
   updateUser(displayName: string) {
     return updateProfile(getAuth().currentUser, { displayName })
   }
-
+/*
   //----Base de datos----------------
 
   //----setear un documento----------------
@@ -46,5 +46,5 @@ export class FirebaseService {
 
   }
 
-
+*/
 }

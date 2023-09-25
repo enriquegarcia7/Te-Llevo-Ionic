@@ -52,7 +52,7 @@ export class RegistrarPage implements OnInit {
     }
   }
 
-
+/*
   async setUserInfo(uid: string) {
     if (this.form.valid) {
 
@@ -84,4 +84,5 @@ export class RegistrarPage implements OnInit {
       })
     }
   }
+  **/
 }
