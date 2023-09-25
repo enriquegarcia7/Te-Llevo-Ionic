@@ -32,7 +32,11 @@ export class RegistrarPage implements OnInit {
       this.firebaseSvc.signUp(this.form.value as User).then( async res => {
 
         await this.firebaseSvc.updateUser(this.form.value.name);
-        console.log(res);
+        
+        let uid = res.user.uid;
+        this.form.controls.uid.setValue(uid);
+
+        this.setUserInfo(uid);
 
       }).catch(error => {
         console.log(error);
@@ -64,7 +68,10 @@ export class RegistrarPage implements OnInit {
 
       this.firebaseSvc.setDocument(path, this.form.value).then( async res => {
 
-        this.utilsSvc.saveInLocalStorage('user', this.form.value)
+        this.utilsSvc.saveInLocalStorage('user', this.form.value);
+        this.utilsSvc.routerLink('/main/home');
+        this.form.reset();
+        
         
       }).catch(error => {
         console.log(error);
