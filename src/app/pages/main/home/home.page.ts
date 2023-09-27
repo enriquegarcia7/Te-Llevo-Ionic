@@ -16,7 +16,7 @@ export class HomePage implements OnInit {
   }
 
 
-  //---cerar sesion---
+  //---cerrar sesion---
   signOut() {
     this.firebaseSvc.signOut();
   }
