@@ -78,7 +78,7 @@ export class AuthPage implements OnInit {
 
         this.utilsSvc.presentToast({
           message: error.message,
-          duration: 2500,
+          duration: 3500,
           color: 'primary',
           position: 'middle',
           icon: 'alert-circle-outline'
