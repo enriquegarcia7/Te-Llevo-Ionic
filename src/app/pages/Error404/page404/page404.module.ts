@@ -4,19 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { Page404PageRoutingModule } from './page404-routing.module';
 
-import { HomePage } from './home.page';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { Page404Page } from './page404.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
-    SharedModule
+    Page404PageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [Page404Page]
 })
-export class HomePageModule {}
+export class Page404PageModule {}

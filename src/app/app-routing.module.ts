@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'main',
     loadChildren: () => import('./pages/main/main.module').then( m => m.MainPageModule), canActivate: [AuthGuard]
   },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/Error404/page404/page404.module').then( m => m.Page404PageModule)
+  },
 ];
 
 @NgModule({
