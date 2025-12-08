@@ -26,7 +26,7 @@
     "@capacitor/camera": "^5.0.7",
     "@capacitor/core": "5.4.0",
     "@capacitor/haptics": "5.0.6",
-    "@capacitor/keyboard": "5.0.6",
+    "@capacitor/keyboard": "5.0.9",
     "@capacitor/status-bar": "5.0.6",
     "@ionic/angular": "^7.0.0",
     "@ionic/pwa-elements": "^3.2.2",
